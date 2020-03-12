@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="topbox box">
+        <h2>I'm thinking of a random number between 1-100</h2>
+        <p>Dare to guess?</p>
+        <br>
+        <h5>Select difficulty setting:</h5>
+        <button type='button' id='easyBtn' class='difficultyBtn' id="easyDiff" class='hoverStyle'>Easy: Guess in 10
+            attempts
+            (default)</button>
+        <button type='button' id='hardBtn' class='difficultyBtn' id='hardDiff' class='hoverStyle'>Hard: Guess in 5
+            attempts</button>
+    </div>
+
+
+    <div class="enterguessbox box">
+        <p class='guessFeedback'>Type in your guess!</p>
+        <form action="">
+            <input type="text" id='guessInput' placeholder='your guess'>
+        </form>
+        <button type="button" id='submitBtn' class='difficultyBtn'>Submit</button>
+        <h4>Guesses You Have Left: <span class="guessesLeftSpan"></span></h4>
+    </div>
+
+    <div class="historybox box">
+        <p>Your Previous Guesses:</p>
+        <p class='oldGuessesSpan'></p>
+        <button type="button" id='restartBtn' class='difficultyBtn'>RESTART</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
